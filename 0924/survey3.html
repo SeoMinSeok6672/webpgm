@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>설문조사</title>
+</head>
+<body>
+
+    <!-- 헤더 섹션 -->
+    <header>
+        <h1>설문조사</h1>
+        <p>컴퓨터 기술에 대한 의견을 듣고자 합니다. 아래 설문에 참여해주세요.</p>
+    </header>
+
+    <!-- 메인 콘텐츠 섹션 -->
+    <main>
+        <section>
+            <h2>설문조사 양식</h2>
+            <form action="submit-survey.php" method="POST">
+                <!-- 이름 입력 -->
+                <label for="name">이름:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <!-- 나이 선택 -->
+                <label for="age">나이:</label><br>
+                <select id="age" name="age">
+                    <option value="20대">20대</option>
+                    <option value="30대">30대</option>
+                    <option value="40대">40대</option>
+                    <option value="50대 이상">50대 이상</option>
+                </select><br><br>
+
+                <!-- 선호하는 기술 선택 -->
+                <label for="tech">가장 관심 있는 기술:</label><br>
+                <input type="radio" id="ai" name="tech" value="AI" required>
+                <label for="ai">인공지능 (AI)</label><br>
+                <input type="radio" id="ml" name="tech" value="ML">
+                <label for="ml">머신 러닝 (ML)</label><br>
+                <input type="radio" id="dl" name="tech" value="DL">
+                <label for="dl">딥 러닝 (DL)</label><br><br>
+
+                <!-- 의견 작성 -->
+                <label for="opinion">의견을 남겨주세요:</label><br>
+                <textarea id="opinion" name="opinion" rows="4" cols="50"></textarea><br><br>
+
+                <!-- 제출 버튼 -->
+                <input type="submit" value="제출">
+            </form>
+        </section>
+    </main>
+
+    <!-- 푸터 섹션 -->
+    <footer>
+        <p>&copy; 2024 설문조사 페이지</p>
+    </footer>
+
+</body>
+</html>
