@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap과 Foundation 조합 프로필 카드</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.3/css/foundation.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Bootstrap과 Foundation의 스타일 충돌 방지를 위한 기본 스타일 */
+        .card {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="grid-container">
+    <div class="grid-x grid-margin-x">
+        <div class="cell small-12 medium-4">
+            <div class="card">
+                <img src="이력서용 사진.jpg" class="card-img-top" alt="프로필 사진">
+                <div class="card-body">
+                    <h5 class="card-title">이름</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">직업</h6>
+                    <p class="card-text">여기에 간단한 소개글을 작성하세요.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.3/js/foundation.min.js"></script>
+<script>
+    $(document).foundation();
+</script>
+</body>
+</html>
