@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Company</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-color: #e0f7fa; 
+        }
+        .navbar {
+            background-color: #0288d1; 
+        }
+        .navbar-brand, .nav-link {
+            color: white !important;
+        }
+        .section-title {
+            color: #0288d1; 
+        }
+        .collapse {
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+        .collapse.show {
+            opacity: 1;
+            visibility: visible;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg shadow">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">내가 가고싶은 회사소개하기</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#culture">Culture</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#careers">Careers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sections -->
+    <section id="home" class="text-center py-5 bg-white">
+        <div class="container">
+            <h1 class="text-4xl font-bold mb-4 section-title">CJ올리브네트웍스</h1>
+            <p>CJ올리브네트웍스에 대해 소개합니다.</p>
+        </div>
+    </section>
+
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="text-3xl font-bold mb-4 section-title">회사의 연혁</h2>
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#aboutContent" aria-expanded="false" aria-controls="aboutContent">
+                연혁 보기
+            </button>
+            <div class="collapse mt-3" id="aboutContent">
+                <p>설립일 : 1995년 3월 15일</p>
+                <p>소재지 : 서울특별시 용산구 한강대로 366, 10층(동자동, 트윈시티 남산)</p>
+                <p>대표자 : 유인상</p>
+                <p>산업 분야 : IT컨설팅, 시스템 통합/운영, 데이터 센터 등</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="culture" class="py-5 bg-white">
+        <div class="container">
+            <h2 class="text-3xl font-bold mb-4 section-title">회사 복지</h2>
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#cultureContent" aria-expanded="false" aria-controls="cultureContent">
+                복지 보기
+            </button>
+            <div class="collapse mt-3" id="cultureContent">
+                <p>임직원 계열사(CJ)할인, 주택대출 이자지원, 건강검진, 의료비, 심리상담서비스 등</p>
+                <p>선택 근무제, 거점오피스, 자율좌석제, 사내무료카페&안마의자, 야근시 택시비 지원 등</p>
+                <p>자유로운 연차사용, 국내 숙박지원, 해외여행 지원, 근속에 따른 포상금, 유급 휴가지급 등</p>
+                <p>경조휴가/금 지원, 웨딩홀/카 지원, 임신/출산 선물지급, 육아돌봄지원, 자녀 학자금 지원 등</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="careers" class="py-5">
+        <div class="container">
+            <h2 class="text-3xl font-bold mb-4 section-title">채용 정보</h2>
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#careersContent" aria-expanded="false" aria-controls="careersContent">
+                채용 정보 보기
+            </button>
+            <div class="collapse mt-3" id="careersContent">
+                <p>CJ그룹 채용 홈페이지(recruit.cj.net) 지원서 작성</p>
+                <p>국내외 학사학위 이상 소지자 (기졸업자 및 24년 8월 이내 졸업자)</p>
+                <p>지원서접수 -> TEST전형 -> 1차면접 -> 2차면접 -> 인턴십 -> 입사</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-5 bg-white">
+        <div class="container">
+            <h2 class="text-3xl font-bold mb-4 section-title">내가 준비해야 할 것</h2>
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#contactContent" aria-expanded="false" aria-controls="contactContent">
+                준비 사항 보기
+            </button>
+            <div class="collapse mt-3" id="contactContent">
+                <p>자기소개서 문항 파악 및 자기소개서 작성(지원동기, 노력, 성장과정, 비전, 포트폴리오)</p>
+                <p>코딩 테스트 준비(프로그래머스 고득점 Kit)</p>
+                <p>CJ CFT (Culture Fit Test 인성검사)</p>
+                <p>면접 준비 / 예상 질문표 완성</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-3 bg-dark text-white">
+        <p>2020962013 서민석의 꿈 도전기 이제 시작합니다.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
